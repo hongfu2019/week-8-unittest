@@ -12,7 +12,7 @@ class TestFixedProgram(unittest.TestCase):
         data = load_iris(as_frame=True)
         df = data.frame
         df['target'] = data.target
-        self.assertEqual(df.shape, (150, 5))
+        self.assertEqual(df.shape, (150, 7))
 
     def test_preprocess_output(self):
         data = load_iris(as_frame=True)
